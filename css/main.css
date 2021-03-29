@@ -24,7 +24,7 @@
 
 /******** VARIABLES ********/
 :root {
-  --main-color: #f00;
+  --main-color: rgb(2, 21, 111);
   --primary: var(--main-color);
   --text-bg-line-color: var(--main-color);
   --border-radius: 0;
@@ -512,7 +512,7 @@ button:focus {
 }
 
 .about .image-bg {
-  background: url("../img/face.jpg") no-repeat center center;
+  background: url("../img/adolescent.jpg") no-repeat center center;
   position: relative;
   background-size: cover;
   height: 700px;
@@ -751,7 +751,7 @@ button:focus {
 .fact h4 {
   font-size: 30pt;
   letter-spacing: 2pt;
-  color: var(--main-color);
+  color: white;
 }
 
 .fact p {
@@ -838,7 +838,7 @@ button:focus {
 }
 
 .team .team-thumb:hover .team-overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /******** TESTIMONIALS SECTION START ********/
@@ -872,7 +872,7 @@ button:focus {
 .logos {
   width: auto;
   height: auto;
-  background-color: #111111;
+  /* background-color: #111111; */
   padding: 50px 0px;
 }
 
