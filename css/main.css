@@ -25,7 +25,9 @@
 /******** VARIABLES ********/
 :root {
   --main-color: #f00;
+  --primary: var(--main-color);
   --text-bg-line-color: var(--main-color);
+  --border-radius: 0;
 }
 
 .text-bg-line {
@@ -1928,4 +1930,8 @@ img {
 
 .text-shadow {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.modal-content {
+  border-radius: var(--border-radius);
 }
