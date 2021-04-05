@@ -1,0 +1,11 @@
+{% include "partials/header.njk" %}
+
+<main class="main-wrapper">
+  {% block content %}
+
+    {{ content | safe }}
+
+  {% endblock %}
+</main>
+
+{% include "partials/footer.njk" %}

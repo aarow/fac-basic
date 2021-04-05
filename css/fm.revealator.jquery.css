@@ -35,7 +35,7 @@
 .revealator-zoomout,
 .revealator-rotateleft,
 .revealator-rotateright {
-/* Default effect duration */
+  /* Default effect duration */
   transition: all 600ms;
 }
 /* Fade effect */
@@ -405,4 +405,3 @@
 .revealator-duration15 {
   transition-duration: 1500ms !important;
 }
-/*# sourceMappingURL=fm.revealator.jquery.css.map */
