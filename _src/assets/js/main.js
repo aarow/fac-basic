@@ -51,15 +51,22 @@ $(document).ready(function () {
       }
     });
 
-    $(window).scroll(function () {
+    (function () {
       var nav = $(".navbar");
+      nav.addClass("inbody");
+      if (window.location.pathname !== "/") return;
+
       var top = 200;
-      if ($(window).scrollTop() >= top) {
-        nav.addClass("inbody");
-      } else {
-        nav.removeClass("inbody");
-      }
-    });
+      $(window)
+        .scroll(function () {
+          if ($(window).scrollTop() >= top) {
+            nav.addClass("inbody");
+          } else {
+            nav.removeClass("inbody");
+          }
+        })
+        .trigger("scroll");
+    })();
 
     $("body").scrollspy({ target: ".navbar" });
 

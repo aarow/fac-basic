@@ -1,35 +1,39 @@
+@import "./vendors/bootstrap.min.css";
+@import "./vendors/normalize.css";
+@import "./vendors/owl.carousel.min.css";
+@import "./vendors/owl.theme.default.min.css";
+@import "./vendors/font-awesome.min.css";
+@import "./vendors/ionicons.min.css";
+@import "./vendors/jquery.animatedheadline.css";
+@import "./vendors/fm.revealator.jquery.css";
+@import "./vendors/swiper.min.css";
+
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
-/*   01 - GENERAL SETTINGS SECTION  */
-/*   02 - TYPOGRAPHY SECTION  */
-/*   03 - HEADER SECTION  */
-/*   04 - NAVIGATION SECTION */
-/*   05 - ABOUT SECTION */
-/*   06 - SERVICES SECTION */
-/*   07 - PORTFOLIO SECTION */
-/*   08 - ITEM ONE SECTION */
-/*   09 - ITEM TWO SECTION */
-/*   10 - ITEM THREE SECTION */
-/*   11 - ITEM FOUR SECTION */
-/*   12 - ITEM FIVE SECTION */
-/*   13 - TESTIMONIALS SECTION */
-/*   14 - CONTACT SECTION */
-/*   15 - FOOTER SECTION */
-/*   16 - SINGLE-PROJECT ONE SECTION */
+/*   01 - GENERAL SETTINGS SECTION  */ /*   02 - TYPOGRAPHY SECTION  */
+/*   03 - HEADER SECTION  */ /*   04 - NAVIGATION SECTION */
+/*   05 - ABOUT SECTION */ /*   06 - SERVICES SECTION */
+/*   07 - PORTFOLIO SECTION */ /*   08 - ITEM ONE SECTION */
+/*   09 - ITEM TWO SECTION */ /*   10 - ITEM THREE SECTION */
+/*   11 - ITEM FOUR SECTION */ /*   12 - ITEM FIVE SECTION */
+/*   13 - TESTIMONIALS SECTION */ /*   14 - CONTACT SECTION */
+/*   15 - FOOTER SECTION */ /*   16 - SINGLE-PROJECT ONE SECTION */
 /*   17 - SINGLE-PROJECT TWO SECTION */
 /*   18 - SINGLE-PROJECT THREE SECTION */
-/*   19 - SINGLE-PROJECT FOUR SECTION */
-/*   20 - RESPONSIVE SECTION */
-
+/*   19 - SINGLE-PROJECT FOUR SECTION */ /*   20 - RESPONSIVE SECTION */
 /******** VARIABLES ********/
 :root {
   --main-color: rgb(2, 21, 111);
   --primary: var(--main-color);
   --text-bg-line-color: var(--main-color);
   --border-radius: 0;
+  --menu-color: #1b1b1b;
 }
 
+/******** IMPORTS SECTION START ********/
+
+/******** BACKGROUND LINE SECTION START ********/
 .text-bg-line {
   display: inline;
   z-index: -1;
@@ -64,7 +68,7 @@ body {
 
 .divider-bottom,
 .divider-top {
-  background-color: #1b1b1b;
+  background-color: var(--menu-color);
   padding-top: 50px;
   padding-bottom: 50px;
   width: auto;
@@ -377,7 +381,7 @@ button:focus {
 }
 
 .navbar-nav .dropdown-menu {
-  background-color: #1b1b1b;
+  background-color: var(--menu-color);
   border-radius: 0px;
 }
 
@@ -393,7 +397,7 @@ button:focus {
 }
 
 .inbody {
-  background-color: #1b1b1b;
+  background-color: var(--menu-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
@@ -406,7 +410,7 @@ button:focus {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #1b1b1b;
+  color: var(--menu-color);
 }
 
 .navbar-nav .active > .nav-link,
@@ -512,7 +516,7 @@ button:focus {
 }
 
 .about .image-bg {
-  background: url("../img/adolescent.jpg") no-repeat center center;
+  background: url("../img/Alex----128.jpg") no-repeat center center;
   position: relative;
   background-size: cover;
   height: 700px;
@@ -763,10 +767,6 @@ button:focus {
 }
 
 /******** TEAM SECTION START ********/
-
-.team {
-  padding-top: 240px;
-}
 
 .team .line {
   width: 25px;
@@ -1716,9 +1716,7 @@ img {
     width: 15px;
     padding-bottom: 20px;
   }
-  .inbody {
-    padding-bottom: 10px;
-  }
+
   .about .text-wrapper {
     margin: 90px 60px;
     padding: 165px 35px;
@@ -1938,4 +1936,8 @@ img {
 
 .image-text-block-section .main-text {
   max-width: 700px;
+}
+
+.main-wrapper {
+  padding-top: 84px;
 }

@@ -1,56 +1,61 @@
-<!-- Team Section -->
-
-<!-- 
-   JAIME PUERTA
-   ED KOBILIS
-   STEVE FILSON
- -->
-
-<div class="team" id="team">
+{% include "partials/html_head.njk" %}
+<body class="d-flex flex-column h-100">
+  <!-- Header Section -->
+  <header class="header " id="header">
+    <!-- <canvas id="particles"></canvas> -->
     <div class="container">
+      <div class="row">
+        {% include "partials/site_nav.njk" %}
+        {# <div class="arrow-down"></div> #}
+      </div>
+    </div>
+  </header>
+  <main class="main-wrapper flex-grow-1">
+    <div class="team" id="team">
+      <div class="container">
         <div class="row">
-            <div class="col-md-12 col-xs-12 text-center">
-                <h4 class="title text-uppercase">
-                    <span class="text-bg-line">BOARD OF DIRECTORS</span>
-                </h4>
-                <hr class="line"/>
-            </div>
-            <div class="col-md-4 col-xs-12 mb-4">
-                <div class="team-thumb">
-                    <img
-                  src="/img/michael_gray.jpg"
+          <div class="col-md-12 col-xs-12 text-center">
+            <h4 class="title text-uppercase">
+              <span class="text-bg-line">BOARD OF DIRECTORS</span>
+            </h4>
+            <hr class="line"/>
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img
+                  src="/img/michael_gray-bw.jpg"
                   class="img-fluid"
                   alt="team member"
 />
-                    <div class="team-overlay">
-                        <div class="team-item">
-                            <h3 class="text-uppercase">Michael Gray</h3>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3 class="text-uppercase">Michael Gray</h3>
 
-                            <ul class="icons">
-                                <li>
-                                    <a href="#"
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        <i class="fa fa-facebook" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        <i class="fa fa-instagram" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        <i class="fa fa-twitter" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-                            <p class="bio-exerpt">
+                  <p class="bio-exerpt">
                       Michael Gray is the CEO of Actus Analytical, Inc., which
                       develops spectroscopy solutions for public safety
                       compliance, illicit drug detection, agricultural
@@ -63,32 +68,32 @@
                       >
                         [+]
                       </button>
-                            </p>
-                        </div>
-                    </div>
+                  </p>
                 </div>
-                <div
+              </div>
+            </div>
+            <div
                 class="modal fade"
                 id="michaelGrayBio"
                 tabindex="-1"
                 aria-labelledby="michaelGrayBio"
                 aria-hidden="true"
               >
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header align-items-center">
-                                <h5 class="modal-title m-0 h3">Michael Gray</h5>
-                                <button
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header align-items-center">
+                    <h5 class="modal-title m-0 h3">Michael Gray</h5>
+                    <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
                         Michael Gray is the CEO of Actus Analytical, Inc., which
                         develops spectroscopy solutions for public safety
                         compliance, illicit drug detection, agricultural
@@ -98,7 +103,7 @@
                         family and has now joined with Michael in support of
                         Actus Analytical.
                       </p>
-                                <p>
+                    <p>
                         The Grays are the parents of Declan Gray, 25, and Amanda
                         Gray, who was killed by a poisoning of straight Fentanyl
                         on January 11, 2018 at the age of 24. The Gray family
@@ -115,7 +120,7 @@
                         search for symptom relief from tragically under-treated
                         diseases.
                       </p>
-                                <p>
+                    <p>
                         The introduction of Synthetic Opioid Chemicals (a.k.a.
                         Fentanyl) into the illicit drug supply stream is nothing
                         less than a paradigm shift1 to the decades-long “Opioid
@@ -126,7 +131,7 @@
                         and “overdose” is long past; indeed, it is the old
                         paradigm.
                       </p>
-                                <p>
+                    <p>
                         Michael is a popular speaker, offering unique analyses
                         and suggestions for creative solutions to a new problem,
                         i.e., an old problem with a recently altered paradigm1.
@@ -140,7 +145,7 @@
                         (the “Drug Czar) and its Director, Mr. James W. Carroll,
                         is a close partner.
                       </p>
-                                <p>
+                    <p>
                         The Actus Foundation also advocates for the mentally
                         ill, striving to deliver the message that mental illness
                         is a disease the entire family suffers, and suffers in
@@ -155,47 +160,47 @@
                         stepchild hidden in the attic as the country proudly
                         displays her medical science wonders to the world.
                       </p>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4 col-xs-12 mb-4">
-                <div class="team-thumb">
-                    <img
-                  src="/img/virginia.jpg"
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img
+                  src="/img/virginia-bw.jpg"
                   class="img-fluid"
                   alt="team member"
 />
-                    <div class="team-overlay">
-                        <div class="team-item">
-                            <h3 class="text-uppercase">Virginia Krieger</h3>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3 class="text-uppercase">Virginia Krieger</h3>
 
-                            <ul class="icons">
-                                <li>
-                                    <a href="#"
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        <i class="fa fa-facebook" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        <i class="fa fa-instagram" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        <i class="fa fa-twitter" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-                            <p class="bio-exerpt">
+                  <p class="bio-exerpt">
                       Virginia Krieger is a former nurse and investigative
                       analyst for The Hartford specializing in disability fraud.
                       She has applied her extensive background in investigative
@@ -209,32 +214,32 @@
                       >
                         [+]
                       </button>
-                            </p>
-                        </div>
-                    </div>
+                  </p>
                 </div>
-                <div
+              </div>
+            </div>
+            <div
                 class="modal fade"
                 id="virginiaBio"
                 tabindex="-1"
                 aria-labelledby="virginiaBioLabel"
                 aria-hidden="true"
               >
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Virigina Krieger</h5>
-                                <button
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Virigina Krieger</h5>
+                    <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
                         Virginia Krieger is a former nurse and investigative
                         analyst for The Hartford specializing in disability
                         fraud. She has applied her extensive background in
@@ -258,7 +263,7 @@
                         illicit fentanyl; has spoken at recovery events and
                         rallies in Ohio, Pennsylvania, and Washington D.C.
                       </p>
-                                <p>
+                    <p>
                         Most importantly, she suffers an anguish shared by more
                         than 100,000 American families: she lost her lost her
                         only daughter Tiffany to counterfeit pills (“Percocet”)
@@ -285,7 +290,7 @@
                         together the voices of those living victims of Synthetic
                         Drugs.
                       </p>
-                                <p>
+                    <p>
                         Virginia Krieger brings a unique perspective to the
                         Opioid Crisis. Losing a non-addicted, non-user child to
                         this Crisis, while suffering the anguish of addiction as
@@ -299,43 +304,43 @@
                         and suffering are a constant, and, much like the grief
                         of losing a child, permanent.
                       </p>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4 col-xs-12 mb-4">
-                <div class="team-thumb">
-                    <img src="/img/jaime.jpg" class="img-fluid" alt="team member"/>
-                    <div class="team-overlay">
-                        <div class="team-item">
-                            <h3 class="text-uppercase">Jaima Peurta</h3>
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img src="/img/jaime-bw.jpg" class="img-fluid" alt="team member"/>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3 class="text-uppercase">Jaima Peurta</h3>
 
-                            <ul class="icons">
-                                <li>
-                                    <a href="#"
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        <i class="fa fa-facebook" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        <i class="fa fa-instagram" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        <i class="fa fa-twitter" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-                            <p class="bio-exerpt">
+                  <p class="bio-exerpt">
                       bio exerpt
                       <button
                         class="btn btn-link text-white"
@@ -345,70 +350,70 @@
                       >
                         [+]
                       </button>
-                            </p>
-                        </div>
-                    </div>
+                  </p>
                 </div>
-                <div
+              </div>
+            </div>
+            <div
                 class="modal fade"
                 id="virginiaBio"
                 tabindex="-1"
                 aria-labelledby="virginiaBioLabel"
                 aria-hidden="true"
               >
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Jaima Peurta</h5>
-                                <button
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Jaima Peurta</h5>
+                    <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Full bio</p>
-                            </div>
-                        </div>
-                    </div>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Full bio</p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4 col-xs-12 mb-4">
-                <div class="team-thumb">
-                    <img src="/img/jaime.jpg" class="img-fluid" alt="team member"/>
-                    <div class="team-overlay">
-                        <div class="team-item">
-                            <h3>ED KOBILIS</h3>
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img src="/img/ed-bw.jpg" class="img-fluid" alt="team member"/>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3>ED KOBILIS</h3>
 
-                            <ul class="icons">
-                                <li>
-                                    <a href="#"
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        <i class="fa fa-facebook" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        <i class="fa fa-instagram" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        <i class="fa fa-twitter" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-                            <p class="bio-exerpt">
-                      bio exerpt
+                  <p class="bio-exerpt">
+                      Ed Kobilis worked in a research lab for a large  chemical company for 18 years before switching careers in 1998...
                       <button
                         class="btn btn-link text-white"
                         type="button"
@@ -417,69 +422,69 @@
                       >
                         [+]
                       </button>
-                            </p>
-                        </div>
-                    </div>
+                  </p>
                 </div>
-                <div
+              </div>
+            </div>
+            <div
                 class="modal fade"
                 id="KOBILISBIO"
                 tabindex="-1"
                 aria-labelledby="virginiaBioLabel"
                 aria-hidden="true"
               >
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">ED KOBILIS</h5>
-                                <button
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">ED KOBILIS</h5>
+                    <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Full bio</p>
-                            </div>
-                        </div>
-                    </div>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Ed Kobilis worked in a research lab for a large  chemical company for 18 years before switching careers in 1998. He has been owner and operator of Elite Personal Training and Wellness for the past 23 years. Ed is a bereaved parent who lost his son to illicit fentanyl in 2018.</p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-md-4 col-xs-12 mb-4">
-                <div class="team-thumb">
-                    <img src="/img/jaime.jpg" class="img-fluid" alt="team member"/>
-                    <div class="team-overlay">
-                        <div class="team-item">
-                            <h3>STEVE FILSON</h3>
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img src="/img/jaime-bw.jpg" class="img-fluid" alt="team member"/>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3>STEVE FILSON</h3>
 
-                            <ul class="icons">
-                                <li>
-                                    <a href="#"
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        <i class="fa fa-facebook" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        <i class="fa fa-instagram" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
                           >
-                                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        <i class="fa fa-twitter" aria-hidden="true"></i
                         >
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                  </ul>
 
-                            <p class="bio-exerpt">
+                  <p class="bio-exerpt">
                       bio exerpt
                       <button
                         class="btn btn-link text-white"
@@ -489,37 +494,112 @@
                       >
                         [+]
                       </button>
-                            </p>
-                        </div>
-                    </div>
+                  </p>
                 </div>
-                <div
+              </div>
+            </div>
+            <div
                 class="modal fade"
                 id="STEVEFILSONBIO"
                 tabindex="-1"
                 aria-labelledby="virginiaBioLabel"
                 aria-hidden="true"
               >
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">STEVE FILSON</h5>
-                                <button
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">STEVE FILSON</h5>
+                    <button
                         type="button"
                         class="close"
                         data-dismiss="modal"
                         aria-label="Close"
                       >
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Full bio</p>
-                            </div>
-                        </div>
-                    </div>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Full bio</p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4 col-xs-12 mb-4">
+            <div class="team-thumb">
+              <img src="/img/amy-bw.jpg" class="img-fluid" alt="team member"/>
+              <div class="team-overlay">
+                <div class="team-item">
+                  <h3>AMY NEVILLE</h3>
+
+                  <ul class="icons">
+                    <li>
+                      <a href="#"
+                          >
+                        <i class="fa fa-facebook" aria-hidden="true"></i
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                          >
+                        <i class="fa fa-instagram" aria-hidden="true"></i
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                          >
+                        <i class="fa fa-twitter" aria-hidden="true"></i
+                        >
+                      </a>
+                    </li>
+                  </ul>
+
+                  <p class="bio-exerpt">
+                      bio exerpt
+                      <button
+                        class="btn btn-link text-white"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#AMYBIO"
+                      >
+                        [+]
+                      </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+                class="modal fade"
+                id="AMYBIO"
+                tabindex="-1"
+                aria-labelledby="AMYBIO"
+                aria-hidden="true"
+              >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">AMY NEVILLE</h5>
+                    <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Full bio</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </main>
+
+  {% include "partials/footer.njk" %}
