@@ -10,7 +10,7 @@
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve",
     "dev:postcss": "postcss _src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js -w",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
-    "prod:postcss": "postcss _src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
+    "prod:postcss": "postcss _src/assets/css/index.css -o _src/css/index.css --config ./postcss.config.js",
     "clean": "rimraf _site src/_includes/css"
   },
   "repository": {
