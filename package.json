@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development npm-run-all clean --parallel dev:*",
-    "build": "NODE_ENV=production npm-run-all --parallel prod:*",
-    "prod": "NODE_ENV=production npm-run-all clean --parallel prod:*",
+    "prod": "NODE_ENV=production npm-run-all prod:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve",
     "dev:postcss": "postcss _src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js -w",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
