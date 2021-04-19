@@ -1,12 +1,64 @@
 {% include "partials/html_head.njk" %}
-<body class="">
-    <!-- Header Section -->
-    <header class="header " id="header">
-        <!-- <canvas id="particles"></canvas> -->
-        <div class="container">
-            <div class="row">
-                {% include "partials/site_nav.njk" %}
-                {# <div class="arrow-down"></div> #}
-            </div>
+<body class="d-flex flex-column">
+  <!-- Header Section -->
+  <header class="fixed-top" >
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/#header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            overflow="visible"
+            viewBox="0 0 52 52"
+          >
+            <path
+              d="M51.1 9.4H17.7c-4.6 0-8.4 3.7-8.4 8.4v25.9c0 4.6 3.8 8.4 8.4 8.4h24c.5 0 .9-.4.9-.9s-.4-.9-.9-.9h-24c-3.7 0-6.6-3-6.6-6.6v-26c0-3.6 3-6.6 6.6-6.6h31.9c.3 0 .6.3.6.6V51c0 .5.4.9.9.9s.9-.4.9-.9V10.3c0-.5-.4-.9-.9-.9z"
+/>
+            <path
+              d="M24.9 20.5h16.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H24.9c-3.4 0-6.2 2.8-6.2 6.2v11.6c0 3.4 2.8 6.2 6.2 6.2h16.8c.5 0 .9-.4.9-.9s-.4-.9-.9-.9H24.9c-2.4 0-4.4-2-4.4-4.4V24.9c0-2.4 2-4.4 4.4-4.4z"
+/>
+            <path
+              d="M5.8 29.8H2.4c-.3 0-.6-.3-.6-.6V10.3c0-4.7 3.8-8.5 8.5-8.5h40.9c.5 0 .9-.4.9-.9s-.5-.9-1-.9H10.3C4.6 0 0 4.6 0 10.3v40.9c0 .4.4.8.9.8s.9-.4.9-.9V32.2c0-.3.3-.6.6-.6h3.3c.5 0 .9-.4.9-.9s-.3-.9-.8-.9z"
+/>
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-navicon"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#header"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">FENTANYL</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-form">CONTACT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/media">MEDIA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/volunteers">VOLUNTEERS</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </nav>
+  </header>
+</body>

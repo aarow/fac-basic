@@ -30,11 +30,23 @@ module.exports = function (eleventyConfig) {
   //   "woff2",
   // ]);
 
+  eleventyConfig.setBrowserSyncConfig({
+    ...eleventyConfig.browserSyncConfig,
+    files: ["_site/assets/js/**/*.js", "_site/assets/css/**/*.css"],
+    // ghostMode: false,
+    port: 3000,
+  });
+
+  eleventyConfig.addWatchTarget("./_src/assets/js/**/*.js");
+  eleventyConfig.addWatchTarget("./_src/assets/js/**/*.js");
+
   return {
     dir: {
       input: "_src/pages",
       output: "_site",
       includes: "../_includes",
     },
+    templateFormats: ["html", "md", "njk", "11ty.js"],
+    passthroughFileCopy: true,
   };
 };
